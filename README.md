@@ -1,2 +1,4 @@
 # Wifi-Signal-Strength-Analyser-and-Heatmap
 This is a Signal Strength Analyser that sniffs packets from the Wifi signal source connected to the device and gives the signal strength and generates a .csv file which is then converted into a pandas database which gives us the heatmap of the area with the light areas indicating the areas where the signal strenth is strong and the darker areas indicating where the signal strength is weak
+
+The signalstrenth.py file sniffs the packets at a particular location and returns the signal strength and creates a .csv file with x,y coordinates and signal strength. The hexmap.py file then reads the .csv file and creates a heatmap of the area using a Kernel Density Estimator plot. The heatmap.py file similarly creates a hexmap using the .csv file. The merge.py file scales and merges the heatmap onto the floor plan provided
